@@ -11,7 +11,7 @@ def lambda_ausdruck1():
 
 def lambda_ausdruck2():
     q = [1, 3, 5, 8, 10, 13, 18, 36, 36, 78]
-    z = list(map(lambda x: x%2 == 0, q))
+    z = list(set(map(lambda x: x%3 == 0, q)))
     return z
 def main():
     print(code_erklaerung())
