@@ -1,15 +1,16 @@
 
-Quelldatei = "C:\Users\enybo\Documents\GitHub\pythonFProg\quelldatei.html"
-Zieldatei = "C:\Users\enybo\Documents\GitHub\pythonFProg\zieldatei.html"
+Quelldatei = "C:/Users/enybo/Documents/GitHub/pythonFProg/quelldatei.html"
+Zieldatei = "C:/Users/enybo/Documents/GitHub/pythonFProg/zieldatei.html"
 
 def filterHTML(fileQuelle, fileZiel):
-    return
+    with open(fileQuelle, "r") as f:
+        data = f.readlines()
+    with open(fileZiel, "w") as f:
+        for line in data:
+          print(line.strip(""))
 
 def main():
-    f1 = open(Quelldatei, "rt")
-    f2 = open(Zieldatei, "wt")
-    
-    filterHTML(f1)
+    filterHTML(Quelldatei, Zieldatei)
 
 if __name__ == "__main__":
     main()
