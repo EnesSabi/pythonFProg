@@ -1,14 +1,16 @@
 # Klausur aus dem Wintersemester 20/21
 ## Aufgabe 1) Datentypen und Variable
-a = 9 // 2 / 2
+a = 9 // 2 / 2 
 b = (~3 + 1) << 2
 c = [k % 2 for k in range(5)]
 d = [a + a for a in "abc"]
 #Loesung
-print("type = ", type(a) , ", value = " , a)
-print("type = ", type(b) , ", value = " , b)
-print("type = ", type(c) , ", value = " , c)
-print("type = ", type(d) , ", value = " , d)
+t = "type = "
+v = ", value = "
+print(t, type(a) , v , a)
+print(t, type(b) , v , b)
+print(t, type(c) , v , c)
+print(t, type(d) , v , d)
 
 ## Aufgabe 2) Listen und Tupel
 # Gegeben sei eine Liste q mit Zahlen. Erstellen Sie eine neue Liste, die nur diejenigen Elemente aus q enthält, die sowohl gerade Zahlen sind als auch an einer geraden Position (Index) in der Liste stehen

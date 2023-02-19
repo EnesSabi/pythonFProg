@@ -5,10 +5,12 @@ b = 2e+1j # -> mathematische Schreibweise real+imag(j) und 2e5 -> aex = a*10^x
 c = [1,2] + [(3,4)]
 d = (3,5,7,9)[::-1]
 #Loesung
-print("type = ", type(a) , ", value = " , a)
-print("type = ", type(b) , ", value = " , b)
-print("type = ", type(c) , ", value = " , c)
-print("type = ", type(d) , ", value = " , d)
+t = "type = "
+v = ", value = "
+print(t, type(a) , v , a)
+print(t, type(b) , v , b)
+print(t, type(c) , v , c)
+print(t, type(d) , v , d)
 
 ## Aufgabe 2) Listen und Tupel
 # a) Definieren Sie eine Liste von Tripel (3er Tupeln), die alle Möglichkeiten darstellt, wie man drei Kugeln mit 1, 2 und 3 beschriftet aus einer Urne ziehen kann.
